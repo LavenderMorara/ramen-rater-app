@@ -21,7 +21,8 @@
 }
 #head{
     background-color: black;
-   text-align: center;
+    text-align: center;
+    color: white;
 }
 #form{
     display: flex;
