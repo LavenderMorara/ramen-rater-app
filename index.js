@@ -10,7 +10,7 @@
 //displaying ramen images
    function displayRamens(ramens){
     let menu=document.getElementById('ramen-menu')
-        menu.innerHTML="";//clears previous images before appending new ones
+    menu.innerHTML="";//clears previous images before appending new ones
     ramens.forEach((ramen)=>{
         let img=document.createElement('img')
         img.dataset.id=ramen.id;
