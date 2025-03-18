@@ -7,3 +7,27 @@
     background: black;
     text-align: center;
 }
+#rating_form{
+    text-align: center;
+}
+#ramen_details{
+    text-align: center;
+}
+#submit{
+    height: 40px;
+    width:410px;
+    background-color: black;
+    color: white;
+}
+.input{
+    width: 400px;
+    height: 40px;
+}
+#head{
+    background-color: black;
+   text-align: center;
+}
+#form{
+    display: flex;
+    justify-content: center;
+}

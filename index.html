@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAMEN RATING APP</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body id="main_cotent">
     <h1 id="heading">RAMEN RATER</h1>
     <div id="ramen-menu">
-        <div id="raman_details"></div>
-        <form id="rating_form"></form>
-
-    </div>    
+    </div>
+    <div id="ramen_details">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="form">
+    <form id="rating_form">
+        <h2 id="head">Add New Ramen</h2>
+        <label for="new_name">Food Name:</label> <br> 
+        <input class="input" type="text" value="" > <br>
+        <label for="restaurant_name">Restaurant:</label><br> 
+        <input class="input" type="text" ><br>
+        <label for="rating">Rating:</label><br> 
+        <input class="input" type="number" max="10"><br>
+        <label for="image">Image:</label><br> 
+        <input class="input" type="url"><br>
+        <label for="comment">Comment:</label><br>
+        <input class="input" type="text"><br>
+        <br>
+        <button id="submit">Create</button>
+        
+    </form>
+    </div>
 </body>
 </html>
