@@ -30,8 +30,8 @@ function handleClick(ramen) {
     details.innerHTML = ""; 
     
     let img = document.createElement('img');
-    img.src = ramen.image;
-    img.alt = ramen.name;
+    img.src = ramens.ramen.image;
+    img.alt = ramens.ramen.name;
     img.style.height = '350px';
     img.style.width = '400px';
     
