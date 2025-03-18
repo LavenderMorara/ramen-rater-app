@@ -30,8 +30,8 @@ function handleClick(ramen) {
     details.innerHTML = ""; 
     
     let img = document.createElement('img');
-    img.src = ramens.ramen.image;
-    img.alt = ramens.ramen.name;
+    img.src = ramen.image;
+    img.alt = ramen.name;
     img.style.height = '350px';
     img.style.width = '400px';
     
@@ -45,7 +45,7 @@ function handleClick(ramen) {
     rating.textContent = ramen.rating ? `Rating: ${ramen.rating}` : "Rating: N/A";
     
     let comment = document.createElement('p');
-    comment.textContent = ramen.comment ? `Comment: ${ramen.comment}` : "comment:No comment available"
+    comment.textContent = ramen.comment ? `Comment: ${ramen.comment}` : "Comment:No comment available"
     details.appendChild(img);
     details.appendChild(name);
     details.appendChild(restaurant);
@@ -57,10 +57,8 @@ function handleClick(ramen) {
 
   document.getElementById('rating_form').addEventListener('submit',handleSubmit)
  function handleSubmit(e){
-    
     e.preventDefault();
     form=document.getElementById('rating_form')
-    
     let newName=e.target[0].value
     let newRestaurant=e.target[1].value
     let newRating=e.target[2].value
