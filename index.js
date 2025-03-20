@@ -18,7 +18,8 @@
         img.style.height='260px'
         img.style.width='300px'
         img.addEventListener('click',()=>handleClick(ramen))
-        menu.appendChild(img)
+        img.id="ramenImage"
+        menu.appendChild(img);
            
    })
 }
@@ -46,16 +47,16 @@ function handleClick(ramen) {
     
     let comment = document.createElement('p');
     comment.textContent = ramen.comment ? `Comment: ${ramen.comment}` : "Comment:No comment available"
+
     details.appendChild(img);
     details.appendChild(name);
     details.appendChild(restaurant);
     details.appendChild(rating);
-    details.appendChild(comment)
-   
+    details.appendChild(comment);
 }
 //pushing the new ramen
 
-  document.getElementById('rating_form').addEventListener('submit',handleSubmit)
+ document.getElementById('rating_form').addEventListener('submit',handleSubmit)
  function handleSubmit(e){
     e.preventDefault();
     form=document.getElementById('rating_form')
@@ -75,20 +76,19 @@ function handleClick(ramen) {
         id: newId
      }
      console.log(newRamen)
-    //  let newRamens = [...ramens, newRamen]
-    //  displayRamens(newRamens)
      ramens.push(newRamen)
      displayRamens(ramens)
-    //  console.log(newRamens)
      form.reset()
   }
   
-   
+//   function deleteRamen(ramen){
+//    index=handleClick(ramen)   
+//    ramens.length=ramen.length-1
+//    displayRamens()
+//   }
      function main(){
         displayRamens(ramens)
         handleClick()
-        if (ramens.length > 0) {
-            handleClick(ramens[0]);
-        };
+        deleteRamen()
     }
     
